@@ -1,7 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 import colors from "../../../constants/colors";
-const Section = ({ children, ...props }) => (
+
+interface SectionPros {
+  children: any;
+}
+const Section: FC<SectionPros> = ({ children, ...props }) => (
   <section {...props}>{children}</section>
 );
 

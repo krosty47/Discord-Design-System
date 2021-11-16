@@ -1,12 +1,14 @@
-import { FC } from "react";
+import { FC, InputHTMLAttributes } from "react";
 import styled from "styled-components";
 import { GenericTextBoxProps } from "./types";
 
-const GenericTextBox: FC<GenericTextBoxProps> = ({
-  className,
-  children,
-  ...props
-}) => (
+interface GenericInputProps extends InputHTMLAttributes<HTMLInputElement> {
+  className?: string;
+  error?: any;
+  style?: any;
+}
+
+const GenericTextBox: FC<GenericInputProps> = ({ className, children, style, ...props }) => (
   <div {...props} className={className}>
     {children}
   </div>

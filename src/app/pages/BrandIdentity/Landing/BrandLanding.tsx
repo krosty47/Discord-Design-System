@@ -54,7 +54,7 @@ export const BrandLanding = () => {
           </ContainerChild>
           <RightSide>
             <img
-              style={{ width: "40%", heigth: "40%" }}
+              style={{ width: "40%", height: "40%" }}
               src={DiscordGif}
               alt="discord Gif"
             ></img>
